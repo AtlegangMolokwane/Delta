@@ -1,0 +1,118 @@
+.deal-div {
+  margin-left: 50px;
+}
+.container-deal {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.box-deal {
+  position: relative;
+  background: #fbfbfb;
+  box-shadow: 0px 12px 24px rgba(44, 39, 56, 0.02),
+    0px 24px 48px rgba(44, 39, 56, 0.04);
+  border-radius: 24px;
+  height: 207px;
+  width: 420px;
+  border-radius: 24px;
+  margin: 80px 40px 0% 0px;
+}
+
+.title-deal {
+  position: relative;
+  color: #2c2738;
+  font-family: Sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.flex-deal {
+  display: flex;
+}
+
+.original-price-deal {
+  font-family: Sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration-line: line-through;
+  color: #2c2738;
+  margin: 15px;
+}
+
+.sale-price-deal {
+  font-family: Sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: #14a38b;
+  margin: 15px;
+}
+
+.button-deal {
+  background: #fbfbfb;
+  border: 1px solid #2c2738;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.0001),
+    0px 4px 8px rgba(44, 39, 56, 0.08);
+  border-radius: 6px;
+  height: 48px;
+  width: 140px;
+}
+.deals-deal {
+  height: 77px;
+  width: 688px;
+  border-radius: nullpx;
+  font-family: Sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 62px;
+  letter-spacing: 1.5px;
+  text-align: left;
+  color: #000000;
+}
+
+.search-deal {
+  height: 52px;
+  width: 360px;
+  border-radius: 6px;
+  background: #ffffff;
+  border: 1px solid #dbe2ea;
+  box-sizing: border-box;
+  margin: 4% 0% 0% 25%;
+}
+
+::placeholder {
+  height: 21px;
+  width: 287px;
+  border-radius: nullpx;
+  font-family: Sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #888888;
+}
+.filter-deal {
+  border-color: #ffffff;
+  border-radius: 0px;
+  position: absolute;
+  width: 1263px;
+  height: 63px;
+  background: #faf8f8;
+  font-family: Sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 1.5px;
+  text-align: left;
+}

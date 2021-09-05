@@ -1,0 +1,9 @@
+.WebContainer {
+  width: 100%;
+  height: auto;
+}
+.articles {
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
