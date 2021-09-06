@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
-import Games from "./Games";
-import Header from "./Header";
-import Deals from "./Deals";
-import Store from "./Store";
-import MoreDeals from "./DealsLookUp/MoreDeals";
+import Games from "../Game/Games";
+import Header from "../Header/Header";
+import Deals from "../Deals/Deals";
+import Store from "../Store/Store";
+import MoreDeals from "../MoreDeals/MoreDeals";
 import { Router, Route, Switch, Redirect } from "react-router-dom";
 import { createBrowserHistory } from "history";
 
