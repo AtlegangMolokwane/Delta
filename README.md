@@ -1,70 +1,46 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## List any assumptions you have before starting with the project
 
-## Available Scripts
+- created folder for each component so that it is easy to navigate.
+- I assumed that you did not need me to use any state management tools like Redux, as that is not my strength yet but I am in the process of learning it. So I fetched my data in the same files I used them.
+- I prioritized the required fields and did not put so much attention to the optional ones
+
+## How to run the application
 
 In the project directory, you can run:
 
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Reason for specific designs and interfaces
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I used the same designs that as the one in Figma mock-up, that pages may not look the exactly same everywhere but the are very similar. I used it because I liked it and reduced the design job for me.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## List any encountered obstacles and how you solved them
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Testing, it was my first time ever testing. It took me a while before I could get my testings to pass. I did only one unit test, which was testing the HeadLink() function.
+- Pasing props through Link router, it took me a while before I could get right.
+- Other syntax errors.
+- Adding image to the store page was a problem, the url link was not found. Since it was not a required field, I shifted my focus to required fields. 
 
-### `npm run eject`
+## List resources used and relevant references
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- StackOverFlow for most of the errors I was getting
+- For react router https://reactrouter.com/web/guides/quick-start 
+- For testing, I watched a couple of videos but this one was mostly useful https://www.youtube.com/watch?v=FgnxcUQ5vho 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## How long you took to complete the assignment
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+3 days total
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## If you had more time, what would you do differently? Also, what would you have added additionally?
 
-## Learn More
+- Gave myself time to use Redux for my code to be shortened and more readable.
+- In Store page,I would have added functionality to the "view more" button, how many deals info and image. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
