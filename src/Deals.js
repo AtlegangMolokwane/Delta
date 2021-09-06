@@ -1,6 +1,7 @@
 import React from "react";
 import "./Deals.css";
 import axios from "axios";
+import { Link } from 'react-router-dom';
 
 class Deals extends React.Component {
   constructor(props) {
@@ -91,7 +92,9 @@ class Deals extends React.Component {
                       <div className="sale-price-deal">${data.salePrice}</div>
                     </div>
                     <button className="button-deal">
-                      <p>View More</p>
+                    <Link to={{pathname: `/Deals/${data.dealID}`, state:{
+                      gameID: data.gameID
+                    }}}>View More</Link>
                     </button>
                   </div>
             );

@@ -4,24 +4,26 @@ import Games from "./Games";
 import Header from "./Header";
 import Deals from "./Deals";
 import Store from "./Store";
+import DealInfo from "./DealsLookUp/DealInfo";
 import {
-  BrowserRouter as Router,
+  Router,
   Route,
   Switch,
   Redirect,
 } from "react-router-dom";
+import { createBrowserHistory } from 'history';
 
 class App extends React.Component {
-
+  history = createBrowserHistory()
   render() {
     
     return (
       <div className="container">
-        <Router>
+        <Router history={this.history}>
           <div>
             <Header />
             <Switch>
-              <Route exact path="/">
+              <Route exact path="/Deals">
                 <Deals />
               </Route>
               <Route path="/store">
@@ -30,6 +32,10 @@ class App extends React.Component {
               <Route exact path="/games">
                 <Games />
               </Route>
+              <Route exact path="/Deals/:dealID" render={(props) =>
+              <DealInfo {...props} key={props.match.params.id} />
+            }
+          />
               <Route path="*" render={() => <Redirect to="/" />} />
             </Switch>
           </div>
