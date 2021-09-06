@@ -1,0 +1,164 @@
+.container-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+.container {
+  margin: 40px;
+}
+.title {
+  position: relative;
+  height: 68px;
+  width: 65%;
+  border-radius: undefinedpx;
+  font-family: Sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin: 10px;
+}
+
+.flex {
+  position: relative;
+  display: flex;
+  margin: 30px;
+}
+
+.original-price {
+  font-family: Sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 21px;
+  text-decoration-line: line-through;
+  color: #2c2738;
+  margin: 15px;
+}
+
+.sale-price {
+  font-family: Sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 21px;
+  color: #14a38b;
+  margin: 15px;
+}
+
+.you-save {
+  font-family: Sans-serif;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 31px;
+  color: #2c2738;
+  margin: 10px 10px 10px 120px;
+}
+
+.store {
+  position: relative;
+  height: 86.48064422607422px;
+  width: 646px;
+  border-radius: 0px;
+  background: #f8f8f8;
+  font-family: Sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  margin: 70px 0px 10px 10px;
+}
+
+.image {
+  margin: 10px;
+  position: relative;
+  width: 644px;
+  height: 498px;
+}
+
+.other-title {
+  position: relative;
+  height: 83px;
+  width: 460px;
+  border-radius: 0px;
+  background: #f8f8f8;
+  font-family: Sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.other-store {
+  position: relative;
+  width: 291px;
+  height: 33px;
+  font-family: Sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 154%;
+  color: #2c2738;
+}
+
+.other-price {
+  position: relative;
+  font-family: Sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+  text-decoration-line: line-through;
+  color: #2c2738;
+  margin: 15px 15px 15px 0px;
+  font-size: 14px;
+}
+
+.original-sale {
+  position: relative;
+  font-family: Sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+  color: #14a38b;
+  margin: 15px 15px 15px 0px;
+  font-size: 14px;
+}
+
+.other-button {
+  background: #fbfbfb;
+  border: 1px solid #2c2738;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.0001),
+    0px 4px 8px rgba(44, 39, 56, 0.08);
+  border-radius: 6px;
+  height: 48px;
+  width: 140px;
+}
+.other-flex-price {
+  position: relative;
+  display: flex;
+  margin: 5px 0px;
+}
+
+.other-flex {
+  position: relative;
+  display: flex;
+  margin: 15px;
+}
+
+.other-div {
+  position: relative;
+  height: 0px;
+  width: 438px;
+  border-radius: nullpx;
+  border: 0.5px solid #e2e2e2;
+}

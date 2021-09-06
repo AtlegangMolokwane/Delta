@@ -63,6 +63,16 @@
   border-radius: 6px;
   height: 48px;
   width: 140px;
+  margin: 0px 20px;
+}
+.text {
+  text-decoration: none;
+  font-family: Sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  color: #2c2738 !important;
 }
 .deals-deal {
   height: 77px;
@@ -102,6 +112,7 @@
   color: #888888;
 }
 .filter-deal {
+  position: relative;
   border-color: #ffffff;
   border-radius: 0px;
   position: absolute;
@@ -115,4 +126,13 @@
   line-height: 36px;
   letter-spacing: 1.5px;
   text-align: left;
+}
+
+.div-deal {
+  margin: 130px 0px 10px 0px;
+  position: relative;
+  height: 0px;
+  width: 100%;
+  border-radius: nullpx;
+  border: 0.5px solid #e2e2e2;
 }

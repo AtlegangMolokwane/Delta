@@ -63,6 +63,7 @@ class Deals extends React.Component {
         <option value="1">On Sale</option>
         <option value="0">Not On Sale</option>
       </select>
+      <div className = "div-deal"/>
 
         <div className="container-deal">
         {this.state.dealRes ? (
@@ -92,9 +93,8 @@ class Deals extends React.Component {
                       <div className="sale-price-deal">${data.salePrice}</div>
                     </div>
                     <button className="button-deal">
-                    <Link to={{pathname: `/Deals/${data.dealID}`, state:{
-                      gameID: data.gameID
-                    }}}>View More</Link>
+                    <Link to={`/Deals/${data.dealID}`
+                    } className = "text">View More</Link>
                     </button>
                   </div>
             );

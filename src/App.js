@@ -4,7 +4,8 @@ import Games from "./Games";
 import Header from "./Header";
 import Deals from "./Deals";
 import Store from "./Store";
-import DealInfo from "./DealsLookUp/DealInfo";
+// import DealInfo from "./DealsLookUp/DealInfo";
+import MoreDeals from "./DealsLookUp/MoreDeals";
 import {
   Router,
   Route,
@@ -33,7 +34,7 @@ class App extends React.Component {
                 <Games />
               </Route>
               <Route exact path="/Deals/:dealID" render={(props) =>
-              <DealInfo {...props} key={props.match.params.id} />
+              <MoreDeals {...props} dealID={props.match.params.dealID}/>
             }
           />
               <Route path="*" render={() => <Redirect to="/" />} />
