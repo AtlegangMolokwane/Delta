@@ -1,7 +1,6 @@
-import React from 'react';
-import './Store.css';
+import React from "react";
+import "./Store.css";
 import axios from "axios";
-
 
 class Store extends React.Component {
   constructor(props) {
@@ -17,10 +16,9 @@ class Store extends React.Component {
     this.setState({ search: event.target.value });
   };
 
-  selectChange = (event) =>{
+  selectChange = (event) => {
     this.setState({ onsale: event.target.value });
-};
-
+  };
 
   storeUrl = () => {
     const config = {
@@ -34,7 +32,6 @@ class Store extends React.Component {
         return (res1 = [res1].flat());
       })
       .then((res) => {
-        console.log("the store results:", res[0].storeName);
         if (res) {
           this.setState({
             storeRes: [...this.state.storeRes, ...res],
@@ -49,37 +46,46 @@ class Store extends React.Component {
     this.storeUrl();
   }
   render() {
-    console.log("the Store results:", typeof this.state.storeRes);
-    
     return (
-      <div className = "store-div">
+      <div className="store-div">
         <div className="flex-store">
           <p className="stores-store"> Store </p>
-          <input className="search-store" placeholder="Search stores by name" type="text" value={this.state.search} onChange = {this.searchChange}/>
+          <input
+            className="search-store"
+            placeholder="Search stores by name"
+            type="text"
+            value={this.state.search}
+            onChange={this.searchChange}
+          />
         </div>
 
         <div className="container-store">
-        {this.state.storeRes ? (
-          this.state.storeRes.filter((data) =>{
-            if (this.state.search === ""){
-              return data
-            }else if(data.storeName.toLowerCase().includes(this.state.search.toLowerCase())){
-              return data
-            }
-          }).map((data) => {
-            return (
-              
+          {this.state.storeRes ? (
+            this.state.storeRes
+              .filter((data) => {
+                if (this.state.search === "") {
+                  return data;
+                } else if (
+                  data.storeName
+                    .toLowerCase()
+                    .includes(this.state.search.toLowerCase())
+                ) {
+                  return data;
+                }
+              })
+              .map((data) => {
+                return (
                   <div className="box-store" key={data.storeID}>
                     <div className="title-store">{data.storeName}</div>
                     <button className="button-store">
                       <p>View More</p>
                     </button>
                   </div>
-            );
-          })
-        ) : (
-          <p>Loading ... </p>
-        )}
+                );
+              })
+          ) : (
+            <p>Loading ... </p>
+          )}
         </div>
       </div>
     );
